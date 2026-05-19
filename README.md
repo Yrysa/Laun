@@ -9,15 +9,15 @@ docker compose up --build
 ```
 
 ```bash
-cd backend
+cd laun_backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload
+uvicorn laun_app.laun_main:app --reload
 ```
 
 ```bash
-cd frontend
+cd laun_frontend
 npm install
 npm run dev
 ```
