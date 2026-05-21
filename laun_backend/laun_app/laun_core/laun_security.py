@@ -5,7 +5,7 @@ from passlib.context import CryptContext
 
 from laun_app.laun_core.laun_config import laun_settings
 
-laun_password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+laun_password_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 
 def laun_hash_password(password: str) -> str:
